@@ -12,8 +12,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        sfpro: ['SF Pro Display', 'sans-serif'], // Renamed to 'sfpro'
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
