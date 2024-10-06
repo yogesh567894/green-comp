@@ -1,5 +1,7 @@
 // components/Menu.js
 
+import Link from 'next/link';
+
 const Navbar = () => {
     return (
         <nav>
@@ -13,34 +15,34 @@ const Navbar = () => {
                 <div className="flex-grow flex justify-center">
                     <ul className="flex space-x-4 text-[21px]">
                         <li>
-                            <a href="#home" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
+                            <Link href="/" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
                                 Home
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#team" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
+                            <Link href="/team" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
                                 Team
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#isd-lab" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
-                                ISD&nbsp;Lab
-                            </a>
+                            <Link href="/isdlab" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
+                                ISD Lab
+                            </Link>
                         </li>
                         <li>
-                            <a href="#drones" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
+                            <Link href="/drones" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
                                 Drones
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#events" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
+                            <Link href="/events" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
                                 Events
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="#worklets" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
+                            <Link href="/worklets" className="text-white hover:bg-gray-700 px-7 py-2 rounded">
                                 Worklets
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
